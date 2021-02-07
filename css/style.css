@@ -33,6 +33,11 @@ p {
   line-height: 2;
 }
 
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
 .cursive {
   color: #11999e;
   font-family: 'Homemade Apple', cursive;
