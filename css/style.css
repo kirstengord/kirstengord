@@ -17,6 +17,7 @@ h1 {
   font-family: 'DM Mono', monospace;
   font-size: 2rem;
   margin: 0;
+  line-height: 2;
 }
 
 h2 {
@@ -27,10 +28,32 @@ h2 {
 h3 {
   color: #11999e;
   font-family: 'DM Mono', monospace;
+  line-height: 2;
 }
 
 p {
   line-height: 2;
+}
+
+.about-img {
+  height: 340px;
+  width: 275px;
+  margin: 50px;
+  border-radius: 25%;
+}
+
+.about-middle-container {
+  height: 700px;
+}
+
+.coming-soon {
+  margin: 75px;
+}
+
+.container {
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
 }
 
 .logo {
@@ -44,39 +67,45 @@ p {
   font-size: 2.8rem;
 }
 
+.extra {
+  background-color: #e4f9f5;
+  height: 50px;
+}
+
+.extra-2 {
+  background-color: #e4f9f5;
+  height: 30px;
+}
+
 .top-container {
   background-color: #e4f9f5;
-  height: 350px;
-  position: relative;
   display: flex;
+  align-content: center;
 }
 
 .footer-container {
   background-color: #e4f9f5;
-  height: 150px;
+  height: 200px;
   margin-top: 50px;
 }
 
-.bottom-container {
-  background-color: #e4f9f5;
-  margin-top: 0;
-}
 
 .heading-position {
-  width: 60%;
-  position: relative;
-  top: 60px;
-  margin: 0 auto;
-  padding: 20px;
+  align-items: center;
 }
 
 .profile {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .intro {
   width: 50%;
   margin: auto;
+}
+
+.skills {
+  background-color: #e4f9f5;
+  padding: 30px 0 1px;
 }
 
 .skill-row {
@@ -88,12 +117,12 @@ p {
 
 .design-img {
   float: left;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .responsive-img {
 float: right;
-margin-left: 30px;
+margin-left: 40px;
 }
 
 .contact-message {
@@ -134,4 +163,32 @@ margin-left: 30px;
 
 .contact-img:hover {
   background-color: #11999e;
+}
+
+.work-img {
+  padding-top: 50px;
+}
+
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #40514e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #40514e; }
 }
