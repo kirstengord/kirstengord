@@ -36,8 +36,7 @@ p {
 }
 
 .about-img {
-  height: 340px;
-  width: 275px;
+  width: 25%;
   margin: 50px;
   border-radius: 25%;
 }
