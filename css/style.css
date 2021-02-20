@@ -157,12 +157,13 @@ margin-left: 40px;
   text-decoration: none;
 }
 
-.contact-img {
+.contact-icon {
+  color: #40514e;
   margin: 20px;
 }
 
-.contact-img:hover {
-  background-color: #11999e;
+.contact-icon:hover {
+  color: #11999e;
 }
 
 .work-img {
