@@ -62,8 +62,9 @@ p {
 
 .cursive {
   color: #11999e;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 2.8rem;
+  font-family: 'Rock Salt', cursive;
+  /* font-family: 'Homemade Apple', cursive; */
+  font-size: 2.5rem;
 }
 
 .extra {
@@ -191,4 +192,30 @@ margin-left: 40px;
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #40514e; }
+}
+
+/* Media Queries */
+
+@media (min-width: 925px) {
+.typewriter-slow {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #40514e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation:
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #40514e; }
+}
 }
