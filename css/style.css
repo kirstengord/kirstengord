@@ -9,13 +9,14 @@ hr {
   color: gray;
   border-width: 10px;
   width: 20%;
-  margin: 100px auto;
+  margin: 8% auto;
 }
 
 h1 {
   color: #40514e;
   font-family: 'DM Mono', monospace;
   font-size: 2rem;
+  font-weight: bold;
   margin: 0;
   line-height: 2;
 }
@@ -35,9 +36,19 @@ p {
   line-height: 2;
 }
 
+/* Containers */
+
+.container-fluid {
+  padding: 5% 8%;
+}
+
+.color-section {
+  background-color: #e4f9f5;
+}
+
+
 .about-img {
-  width: 25%;
-  margin: 50px;
+  width: 30%;
   border-radius: 25%;
 }
 
@@ -49,11 +60,7 @@ p {
   margin: 75px 0;
 }
 
-.container {
-  display: inline-flex;
-  height: 100px;
-  width: 100px;
-}
+
 
 .logo {
   height: 50px;
@@ -63,8 +70,7 @@ p {
 .cursive {
   color: #11999e;
   font-family: 'Rock Salt', cursive;
-  /* font-family: 'Homemade Apple', cursive; */
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .extra {
@@ -94,12 +100,10 @@ p {
   align-items: center;
 }
 
-.profile {
-  margin-top: 100px;
-}
+
 
 .intro {
-  width: 65%;
+  width: 75%;
   margin: auto;
 }
 
@@ -170,6 +174,7 @@ margin-left: 40px;
   padding-top: 50px;
 }
 
+/* Typewriter effect on Work and About pages */
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -178,7 +183,7 @@ margin-left: 40px;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .1em; /* Adjust as needed */
   animation:
-    typing 2.5s steps(40, end),
+    typing 2.5s steps(41, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -208,6 +213,7 @@ margin-left: 40px;
     blink-caret .75s step-end infinite;
 }
 
+/* The typing effect*/
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -217,5 +223,38 @@ margin-left: 40px;
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #40514e; }
+  }
 }
+
+@media (min-width: 926px) and (max-width: 1008px) {
+  .container-fluid {
+    padding: 5%;
+  }
+}
+
+
+@media (max-width: 415px) {
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  hr {
+    margin: 15% auto;
+  }
+
+  #about-title .container-fluid {
+    padding: 5% 25%;
+  }
+  .container-fluid {
+    padding: 5%;
+  }
+  .cursive {
+    font-size: 1.2rem;
+  }
+
 }
