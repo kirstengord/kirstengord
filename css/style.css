@@ -11,7 +11,14 @@ hr {
   color: gray;
   border-width: 10px;
   width: 20%;
-  margin: 8% auto;
+}
+
+.top {
+  margin-top: 5%;
+}
+
+.bottom {
+  margin-bottom: 5%;
 }
 
 h1 {
@@ -148,8 +155,15 @@ a.nav-link:hover {
   .skill-row {
     width: 85%;
     margin: 100px auto;
-    text-align: left;
     line-height: 2;
+  }
+  
+  .right {
+    text-align: right;
+  }
+
+  .left {
+    text-align:left;
   }
   
   .design-img {
@@ -192,8 +206,30 @@ a.nav-link:hover {
 
   /* Work-Title Section */
 
-  .work-img {
-    padding-top: 50px;
+  #professional-projects, #bootcamp-projects, #playground{
+    text-align: left;
+  }
+
+  .work.container-fluid {
+    padding: 5%;
+  }
+
+  .professional-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+ 
+  .img-black {
+    border-bottom: 1px solid black;
+  }
+
+  .projects {
+    padding: 0 5% 5%;
+  }
+
+  .projects h2 {
+    color: #11999e;
+    font-size: 1.5rem;
   }
 
 
