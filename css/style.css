@@ -327,8 +327,9 @@ a.nav-link:hover {
     font-size: 1.1rem;
   }
 
-  hr {
-    margin: 10% auto;
+  .intro {
+    margin: 0;
+    padding: 0 5%;
   }
 
   .container-fluid {
