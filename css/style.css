@@ -228,6 +228,7 @@ a.nav-link:hover {
   }
 
 
+
 /* Typewriter effect */
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -303,6 +304,11 @@ a.nav-link:hover {
  #title .container {
    display: none;
  }
+
+ a.card-text.btn {
+  font-size: 12px;
+}
+
 }
 
 
@@ -311,6 +317,10 @@ a.nav-link:hover {
 
   h1, h2 {
     font-size: 1.2rem;
+  }
+
+  h2.professional-title, h2.card-title {
+    font-size: 1.1rem;
   }
 
   h3 {
