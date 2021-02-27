@@ -259,7 +259,7 @@ a.nav-link:hover {
 
 /* Media Queries */
 
-/* Large Screens */
+/* Home page typing effect on bigger screens */
 @media (min-width: 624px) {
 .typewriter-slow {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -271,22 +271,22 @@ a.nav-link:hover {
     typing 3s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
-/* The typing effect*/
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #40514e; }
+
+/* XLarge screens */
+@media (min-width: 1000px) {
+  .about-container {
+    padding: 5% 0;
+  }
+
+  .container {
+    padding: 0 15%;
   }
 }
 
 
-/* Medium Screens */
+/* Large Screens */
 @media (min-width: 926px) and (max-width: 1008px) {
   .container-fluid {
     padding: 5%;
@@ -294,21 +294,22 @@ a.nav-link:hover {
 }
 
 
-/* Small/Medium screens */
+/* Medium screens */
 @media (max-width: 925px) {
 
   #title .container-fluid {
     padding: 5% 3%;
   }
 
- #title .container {
-   display: none;
- }
-
  a.card-text.btn {
-  font-size: 12px;
+    font-size: 12px;
+  }
 }
 
+@media (max-width: 620px) {
+  #title .container {
+    display: none;
+  }
 }
 
 
@@ -365,6 +366,8 @@ a.nav-link:hover {
     padding: 0 5% 5%;
     float: none;
   }
+
+  
   
   #skills .container-fluid {
     padding-top: 10%;
