@@ -57,12 +57,14 @@ p {
 .color-section {
   background-color: #e4f9f5;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 .top-container {
   background-color: #e4f9f5;
   display: flex;
   align-content: center;
+  border-radius: 10px;
 }
 
 /* Navbar */
